@@ -1,0 +1,33 @@
+def add(x,y):
+    a=x+y
+    return a
+def subs(x,y):
+    a=x-y
+    return a
+def multiple(x,y):
+    a=x*y
+    return a
+def divide(x,y):
+    if y==0:
+        print("cannot divide")
+    elif y!=0:
+        a=x/y
+    return a
+print("choose the operation to perform")
+print("choose 1 for add")
+print("choose 2 for subs")
+print("choose 3 for multiple")
+print("choose 4 for divide")
+choice=input("enter the choice, 1/2/3/4")
+num1=float(input("enter num 1"))
+num2=float(input("enter num 2"))
+if choice == '1':
+    print("The answer : ", add(num1,num2))
+elif choice == '2':
+    print("The answer : ", subs(num1,num2))
+elif choice == '3':
+    print("The answer : ", multiple(num1,num2))
+elif choice == '4':
+    print("The answer : ", divide(num1,num2))
+else:
+    print("invalid input")
